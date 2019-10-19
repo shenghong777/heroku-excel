@@ -1,0 +1,161 @@
+<header class="navbar">
+  
+    <p>轻松管理数据从这里开始</p>
+    <form action="/charge" method="POST">
+      <script
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="{{stripePublishableKey}}"
+        data-name="Buy Ebook"
+        data-description="Your Ebook to excel in Excel"
+        data-amount="2500"
+        data-image="/img/marketplace.png"
+        data-locale="auto"
+        data-currency="myr"
+        >
+        
+      </script>
+      <script>
+          //Hide default stripe button
+          document.getElementsByClassName("stripe-button-el")[0].style.display='none';
+   
+      </script>
+           <button type="submit" id="buynow"> 立即购买</button>
+      
+    </form>
+</header>
+
+<body>
+<div id="main">
+ 
+    
+    <div id="section-1">
+        <div id="section1-eng">
+            <div>Microsoft<br><span>EXCEL</span></div>
+        </div>
+        <div id="section1-chi">
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+            <span>
+                数据管理<br>电子书籍
+            </span>
+        </div>
+    </div>
+
+    <div id="grid-container">
+        
+        <div id="section-header">
+            <!-- A complete guidebook to grant you data handling skill -->
+            <div id="section-header-1stline">一本让您熟操数据的完整手册</div><br>
+            <!-- clear and easy step by step guidance that strcutured into 3 parts -->
+            <div id="section-header-2ndline">
+            简单易懂的<span id="section-header-stp1">三</span><span id="section-header-stp2">阶</span><span id="section-header-stp3">段</span>学习概要
+            </div>
+        </div>
+        <div id="section2-text" class="section-text">
+            <!--data collecting-->
+            <div id="section2-text-1stline">数据收集</div>
+            <div class="section-text-2ndline">利用<span class="eng-font">EXCEL</span>从各类平台的输入系统或数据库获取必要的原始数据</div>
+        </div>
+        <img id="section2-img" class="section-img" src="img/section2img.jpg" alt="diagram of data collection">
+        
+        <div id="grid-gap1"></div>
+                    
+        <div id="section3-text" class="section-text">
+            <!--data analysis-->
+            <div id="section3-text-1stline">数据分析</div>
+            <div class="section-text-2ndline">最大程度地利用<span class="eng-font">EXCEL</span>内置的功能对原始数据进行筛选和分析</div>
+        </div> 
+        <img id="section3-img" class="section-img" src="img/section3img.jpg" alt="diagram of data analysis">
+        
+        <div id="grid-gap2"></div>
+
+        <div id="section4-text" class="section-text">
+            <!--data visualization-->
+            <div id="section4-text-1stline">数据可视化</div>
+            <div class="section-text-2ndline">通过各种图表和图解一目了然地成列出数据的分析结果</div>
+        </div>
+
+        <div id="section4-img">
+  
+            <div>
+                <img class="section-img" src="img/section4img1.jpg" alt="diagram of bar chart">
+            </div>
+            <div>
+                <img class="section-img" src="img/section4img2.jpg" alt="diagram of line graph">
+            </div>
+            <div>
+                <img class="section-img" src="img/section4img3.jpg" alt="diagram of pie chart">
+            </div>
+            <div>
+                <img class="section-img" src="img/section4img4.jpg" alt="diagram of tree diagram">
+            </div>
+               
+        </div>
+        
+        <div id="grid-gap3"></div>
+    </div>
+    
+    <div id="section5-title">为什么电子书籍？</div>
+    <div class="section5">
+        <img class="section5-img" src="img/section5img1.jpg">
+        <div class="section5-text">
+            <!--Learn to manage data smartly anytime, anywhere-->
+            <h3>学习不受约束，不管何时何地</h3>
+            <!--with the learning element in form of softcopy, 
+                you can easily enhance yourself with any of your daily driver seamlessly.-->
+            以电子书籍的形式作为学习媒介，轻松自在地切换于您的任何电脑，智能手机或平板
+        </div>
+    </div>
+    <div class="section5">
+        <img class="section5-img" src="img/section5img2.jpg">
+        <div class="section5-text">
+            <!--Find exactly what you looking for-->
+            <h3>搜寻就在一瞬间</h3>
+            <!--You might look smart by holding a book in your hand,
+                but can you do keyword search? Don't just look smart, Be smart.-->
+            比起传统书籍更为方便，重点搜索，省时省力，与其大海捞针，不如一键搞定
+        </div>
+    </div>
+
+    <div id="section6">
+        <div id="section6-text">
+            <!--h2>Specially designed to fit chinese reader</h2-->
+            <h2>专为中文读者而设的数据管理教学书籍</h2>
+        </div>
+     
+         <form action="/charge" method="POST">
+      <script
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="{{stripePublishableKey}}"
+        data-name="Buy Ebook"
+        data-description="Your Ebook to excel in Excel"
+        data-amount="2500"
+        data-image="/img/marketplace.png"
+        data-locale="auto"
+        data-currency="myr">
+      </script>
+       <script>
+          //Hide default stripe button
+          document.getElementsByClassName('stripe-button-el')[1].style.display = 'none';
+      </script>
+         <div id="section6-button">
+           <div class="buynow-language-margin">
+           <button type="submit" id="buynow-BC"> 下单</button>
+        </div>
+         </div>
+      
+    </form>
+    </div>
+</div>
+</body>
+
+<footer>
+    <div id="page-footer">
+        <p class="margin-remove">联系我们:</p>
+        <p class="margin-remove eng-font">dailyproject.design@gmail.com</p>
+    </div>   
+</footer>
+</html>
